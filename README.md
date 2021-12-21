@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Challenge TuGerente
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este challenge fue creado con React [Link ](https://tugerentechallenge.netlify.app/).
 
-## Available Scripts
+## API solicitada
 
-In the project directory, you can run:
+Estuve con unos problemas para consultar la API que me dieron, así que decidí utilizar otra.
+En est caso es una que trae un array con 5000 elementos.
 
-### `npm start`
+[API ](https://jsonplaceholder.typicode.com/photos/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Problemas con la API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Si bien, desde postman podía hacer perfectamente el pedido, desde el código NO. Me salía
+error 401 de authenticación. Trate de varias formas(sintacticas), en distintas funciones establecer un
+header para la petición pero no pude. Por lo que tuve que acudir a solicitar la data de otra API sin
+HEADER de Authenticacion.
 
-### `npm test`
+### Problemas con la Paginación
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplique un modulo de React para paginación llamado "react-paginate"
+npm i react-paginate --save.
 
-### `npm run build`
+["react-paginate" ](https://www.npmjs.com/package/react-paginate)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+En un principio me anduvo. Pero al modificar unos datos de los hooks no me hacia el calculo de páginas.
+Si bien con un poco mas de tiempo se que podría modificalo a gusto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dialogo personal
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pido disculpas por la demora. La verdad es que me metí a ver lo de la petición a la APi
+y la investigación me llevo mas tiempo que el necesario. Pienso que estoy fallando en unas
+lineas de código para que me authorize y pueda hacer el pedido que quiera. Lo bueno es que aprendí
+bastante desde los dos lados Back y front en cuanto a Autorizaciones, hastta la configuración de un Proxi. La paginación se que puedo dominarlo solo que necesito mas tiempo. Sin más les agradezco por esta oportunidad de
+aprender y mejorar. Saludo.

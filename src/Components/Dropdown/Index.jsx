@@ -5,8 +5,7 @@ import "./dropdown.scss";
 import Pagination from "../Pagination/Index";
 const Index = () => {
   useEffect(() => {
-    //jsonplaceholder.typicode.com/photos
-    https: axios("https://jsonplaceholder.typicode.com/photos")
+     https: axios("https://jsonplaceholder.typicode.com/photos")
       .then((response) => {
          setAllData(response.data);
         setFilteredData(response.data);
