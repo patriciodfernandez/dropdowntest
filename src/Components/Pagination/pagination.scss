@@ -1,0 +1,69 @@
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a {
+  background-color: #47de86;
+  border-color: #47de98;
+  color: rgb(255, 255, 255);
+}
+.pagination > li > a {
+  border: 1px solid #8bde47;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #47de4f;
+  border-color: #60de47;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #1c8a3d;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
+.containerCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background: #000;
+  margin: 3vh;
+  width: 35vw;
+  height: 100%;
+}
+
+.cardstyle {
+  background: #b4e7bd;
+
+  box-shadow:3px 4px 2px #dafae1, -5px -4px 3px #b4e7bd;
+  cursor: pointer;
+  transition: box-shadow 100ms, transform 300ms;
+}
+
+.cardstyle:hover {
+   box-shadow: var(--shadow-hover);
+  }
+
+.item {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: darkgreen;
+  margin: 2vh 2vh;
+}
